@@ -3,8 +3,9 @@ An implementation of ID3 decision tree algorithm in C. The program is implemente
 
 ## Usage
 ### Compile with Makefile
-To compile the scripts, run:
+To compile the scripts, go into the `src/` directory and run:
 ```bash
+cd src/
 make all
 ```
 To remove the intermediate files created during compiling process, run:
@@ -33,7 +34,7 @@ To input a desired seed number (usually used when trying to reproduce a previous
 
 To use a dataset as training set, run with `-d` flag. Example: 
 ```bash
-./classifier -d data/breast-cancer.csv
+./classifier -d ../data/breast-cancer.csv
 ```
 **Note**: The dataset is required to have the first row specifying feature names and to use `,` as delimiter.
 

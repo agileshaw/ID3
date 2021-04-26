@@ -41,12 +41,12 @@ int main(int argc, char *argv[])
 		readData(file, &dataframe);
 		fclose(file);
 	} else {
-		FILE *file = fopen("data/adult+stretch.csv", "r+");
+		FILE *file = fopen("../data/adult+stretch.csv", "r+");
 		if(file == NULL) {
 			perror("Unable to open file!");
 			exit(1);
 		}
-		readData(file, &dataframe); //read data file file and build a dataframe
+		readData(file, &dataframe); //read data file and build a dataframe
 		fclose(file);
 	}
 
